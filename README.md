@@ -1,11 +1,4 @@
-<div align="center">
-    <a href="https://github.com/SilentDemonSD">
-        <kbd>
-            <img width="250" src="https://graph.org/file/80f677693ae80cbd8707e.jpg" alt="FZ Bypass Logo">
-        </kbd>
-    </a>
-
-## ***FZBypassBot***
+## ***CMTypassBot***
 
 <i>A **Elegant Fast Multi Threaded Bypass Telegram Bot** for Bigger Deeds like Mass Bypass. Try Now, and Feel the Speedy Work.</i>
 
