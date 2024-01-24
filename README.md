@@ -1,8 +1,7 @@
 ## ***CMTypassBot***
 
-<i>A **Elegant Fast Multi Threaded Bypass Telegram Bot** for Bigger Deeds like Mass Bypass. Try Now, and Feel the Speedy Work.</i>
+<i>Bypass multi cepat yang mudah dan sangat berguna.</i>
 
-[**Demo Bot**](https://t.me/FZBypassBot) | [**Supported Sites**](#supported-sites) | [**Support Group**](https://t.me/FXTorrentz)
 
 </div>
 
@@ -194,8 +193,3 @@
 - `UPSTREAM_BRANCH`: Put Branch Name. Defaults to `main`
 
 ---
-
-## ***Credits***
-- `SilentDemonSD` (Developer)
-- `Other Contributors` (Those who commited and Helped Internally)
-- `Link-Bypasser-Bot` (Many Scripts are Taken & Totally Modified)
