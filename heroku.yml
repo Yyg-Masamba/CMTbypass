@@ -1,5 +1,5 @@
 build:
   docker:
-    ++    worker: Dockerfile
+    web: Dockerfile
 run:
-  ++  worker: chmod +x hk_deploy.sh && ./hk_deploy.sh
+  web: chmod +x hk_deploy.sh && ./hk_deploy.sh
