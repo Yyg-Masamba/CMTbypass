@@ -139,6 +139,11 @@
       - `REPO_URL`: https://github.com/SilentDemonSD/FZBypassBot
       - `REPO_BRANCH`: main
       - `START_CMD`: bash start.sh
+      - <a href="https://heroku.com/deploy?template=https://github.com/Yyg-Masamba/Her0kuu_ucotaier">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
 2. `VPS`
     - **Build And Run The Docker Image Using Official Docker Commands**
         - _Clone the Repository_
