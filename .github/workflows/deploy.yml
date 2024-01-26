@@ -1,22 +1,36 @@
-name: Manually Deploy to Heroku
+name: H3r0ku Deployer
 
 on: workflow_dispatch
 
+env:
+  IMAGE_NAME: misskatybotnew
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_APP: ${{ secrets.HEROKU_APP }}
+
 jobs:
-  deploy:
+  build_and_push:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          usedocker: true
-          docker_heroku_process_type: web
-          stack: "container"
-          region: "us"
-        env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
-          HD_HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
-          HD_HEROKU_APP_NAME: ${{secrets.HEROKU_APP_NAME}}
+
+      - name: Build the image
+        run: docker build . --file Dockerfile --tag "${IMAGE_NAME}"
+
+      - name: Login into Heroku Container registry
+        run: heroku container:login
+
+      - name: Push the image to Heroku
+        run: heroku container:push "${IMAGE_NAME}" -a "${HEROKU_APP}"
+        
+      - name: Release image to Heroku
+        run: heroku container:release "${IMAGE_NAME}" -a "${HEROKU_APP}"
+
+      - name: Check ENV
+        run: |
+          API_KEY="$(heroku config:get HEROKU_API_KEY -a ${HEROKU_APP})"
+          APP_NAME="$(heroku config:get HEROKU_APP -a ${HEROKU_APP})"
+          if [[ -z "${API_KEY}" && -z "${APP_NAME}" ]]; then
+              heroku config:set HEROKU_API_KEY="${HEROKU_API_KEY}" \
+              HEROKU_APP="${HEROKU_APP}"
+          fi
