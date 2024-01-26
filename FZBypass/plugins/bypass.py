@@ -149,7 +149,7 @@ async def inline_query(client, query):
     
     <i>Bot Multi yang Kuat dan Elegan dibuat dalam code Python, bisa membypass berbagai Link Shortener, Link Scrape, dan lainnya...</i>
     
-🎛 <b>Inline Use :</b> !bp [Single Link]''',
+<b>Inline Use :</b> !bp [Single Link]''',
                 ),
                 description="Bypass via !bp [link]",
                 reply_markup=InlineKeyboardMarkup([
