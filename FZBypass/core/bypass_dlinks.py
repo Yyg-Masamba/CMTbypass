@@ -56,8 +56,8 @@ async def filepress(url: str):
     else:
         tg_link_text = f'<a href="{tg_link}">Click Here</a>'
 
-    parse_txt = f'''┏<b>FilePress:</b> <a href="{url}">Click Here</a>
-┗<b>Telegram:</b> {tg_link_text}'''
+    parse_txt = f'''📙<b><u>FilePress:</b></u> <a href="{url}"><b>Click Here</a></b>
+📓<b><u>Telegram:</b></u> {tg_link_text}'''
     #if "drive.google.com" in dl_link and Config.DIRECT_INDEX:
     #    parse_txt += f"┠<b>Temp Index:</b> <a href='{get_dl(dl_link)}'>Click Here</a>\n"
     #parse_txt += f"┗<b>GDrive:</b> <a href='{dl_link}'>Click Here</a>"
