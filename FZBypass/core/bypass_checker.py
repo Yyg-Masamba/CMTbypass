@@ -230,9 +230,9 @@ async def direct_link_checker(link, onlylink=False):
             
     # Exceptions
     elif bool(match(r"https?:\/\/.+\.technicalatg\.\S+", link)):
-        raise DDLException('Bypass Not Allowed !')
+        raise DDLException('Bypass Tidak Diizinkan !')
     else:
-        raise DDLException(f'<i>No Bypass Function Found for your Link :</i> <code>{link}</code>')
+        raise DDLException(f'<i>Fungsi Bypass dari Link Anda tidak ditemukan : :</i> <code>{link}</code>')
         
     if onlylink:
         return blink
