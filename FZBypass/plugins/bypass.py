@@ -20,10 +20,9 @@ async def start_msg(client, message):
     
     <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
 
-🛃 <b>Use Me Here :</b> https://t.me/+LUX4Ppe0-YI4NTk1 <i>(Bypass Topic)</i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('🎓 Dev', url='https://www.comelmuewa84.eu.org'), InlineKeyboardButton('🎓 Channel', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🔍 Deploy Own', url="https://github.com/Yyg-Masamba/CMTbypass")]
+            [InlineKeyboardButton('💻Modif', url='https://www.comelmuewa84.eu.org'), InlineKeyboardButton('📲Channel', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🖥Deploy', url="https://github.com/Yyg-Masamba/CMTbypass")]
             ])
     )
 
