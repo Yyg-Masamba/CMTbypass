@@ -176,7 +176,7 @@ async def gyanilinks(url: str) -> str:
     try: 
         inputs = soup.find(id="go-link").find_all(name="input")
     except: 
-        raise DDLException("Incorrect Link Provided")
+        raise DDLException("\nGagal membypass link") 
     await asleep(5)
     resp = cget("POST", f"{DOMAIN}/links/go", data= { input.get('name'): input.get('value') for input in inputs }, headers={ "x-requested-with": "XMLHttpRequest" })
     try: 
