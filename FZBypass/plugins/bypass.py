@@ -20,7 +20,7 @@ async def start_msg(client, message):
     
     <i><b>Bot Dimulai {convert_time(time() - BOT_START)} Lalu...</b></i>
 
-🛃 <b>Gabung Jika Mau Gunakan Bot Ini :</b> Pea Masamba <i>(Bypass Topic)</i>''',
+    <b>Gabung Jika Mau Gunakan Bot Ini :</b> Pea Masamba <i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton('💻Modif', url='https://www.comelmuewa84.eu.org'), InlineKeyboardButton('📲Channel', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🖥Deploy', url="https://github.com/Yyg-Masamba/CMTbypass")]
