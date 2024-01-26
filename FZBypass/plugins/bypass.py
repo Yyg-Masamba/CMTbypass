@@ -68,15 +68,15 @@ async def bypass_check(client, message):
         elif isinstance(result, list):
             bp_link, ui = "", "♻️"
             for ind, lplink in reversed(list(enumerate(result, start=1))):
-                bp_link = f"\n{ui} <b>{ind}x Hasil Bypass:</b> {lplink}" + bp_link
+                bp_link = f"\n{ui} <b><u>{ind}x Hasil Bypass:</b></u> {lplink}" + bp_link
                 ui = "┠"
         else:
-            bp_link = f"\n🖥 <b>Bypass Link:</b> {result}"
+            bp_link = f"\n🖥 <b><u>Bypass Link:</b></u> {result}"
     
         if is_excep_link(link):
             parse_data.append(f"{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n")
         else:
-            parse_data.append(f'🖥 <b>Link Sumber:</b> {link}{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n')
+            parse_data.append(f'🖥 <b><u>Link Sumber:</b></u> {link}{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n')
             
     end = time()
 
@@ -114,7 +114,7 @@ async def inline_query(client, query):
             end = time()
             
             if not is_excep_link(link):
-                bp_link = f"🖥 <b>Link Sumber:</b> {link}\n┃\n⚙️ <b>Bypass Link:</b> {bp_link}"
+                bp_link = f"🖥 <b><u>Link Sumber:</b></u> {link}\n┃\n⚙️ <b><u>Bypass Link:</b></u> {bp_link}"
             answers.append(InlineQueryResultArticle(
                 title="✅️ Bypass Link Berhasil !",
                 input_message_content=InputTextMessageContent(
