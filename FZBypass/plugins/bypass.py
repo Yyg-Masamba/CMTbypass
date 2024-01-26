@@ -16,9 +16,9 @@ from FZBypass.core.exceptions import DDLException
 async def start_msg(client, message):
     await message.reply(f'''<b><i>CMT Bypass Bot!</i></b>
     
-    <i>A Powerful Elegant Multi Threaded Bot written in Python... which can Bypass Various Shortener Links, Scrape links, and More ... </i>
+    <i>Bot Multi yang Kuat dan Elegan dibuat dalam code Python, bisa membypass berbagai Link Shortener, Link Scrape, dan lainnya...</i>
     
-    <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
+    <i><b>Bot Dimulai {convert_time(time() - BOT_START)} Lalu...</b></i>
 
         quote=True,
         reply_markup=InlineKeyboardMarkup([
