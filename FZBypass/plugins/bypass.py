@@ -20,6 +20,7 @@ async def start_msg(client, message):
     
     <i><b>Bot Dimulai {convert_time(time() - BOT_START)} Lalu...</b></i>
 
+🛃 <b>Gabung Jika Mau Gunakan Bot Ini :</b> Pea Masamba <i>(Bypass Topic)</i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton('💻Modif', url='https://www.comelmuewa84.eu.org'), InlineKeyboardButton('📲Channel', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🖥Deploy', url="https://github.com/Yyg-Masamba/CMTbypass")]
@@ -149,7 +150,7 @@ async def inline_query(client, query):
     
     <i>Bot Multi yang Kuat dan Elegan dibuat dalam code Python, bisa membypass berbagai Link Shortener, Link Scrape, dan lainnya...</i>
     
-<b>Inline Use :</b> !bp [Single Link]''',
+🎛 <b>Inline Use :</b> !bp [Single Link]''',
                 ),
                 description="Bypass via !bp [link]",
                 reply_markup=InlineKeyboardMarkup([
