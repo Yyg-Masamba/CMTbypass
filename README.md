@@ -138,12 +138,7 @@
     - **Variables Values:**
       - `REPO_URL`: https://github.com/SilentDemonSD/FZBypassBot
       - `REPO_BRANCH`: main
-      - `START_CMD`: bash start.sh
-      - <a href="https://heroku.com/deploy?template=https://github.com/Yyg-Masamba/CMT-Loader">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
-</details>
+      - `START_CMD`: bash start.sh      
 2. `VPS`
     - **Build And Run The Docker Image Using Official Docker Commands**
         - _Clone the Repository_
@@ -175,6 +170,11 @@
         ```
 
 ---
+<a href="https://heroku.com/deploy?template=https://github.com/Yyg-Masamba/CMT-Loader">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+</p>
+</details>
 
 ## ***Config Setup***
 - `BOT_TOKEN`: Telegram Bot Token that you got from BotFather.
