@@ -139,7 +139,7 @@
       - `REPO_URL`: https://github.com/SilentDemonSD/FZBypassBot
       - `REPO_BRANCH`: main
       - `START_CMD`: bash start.sh
-      - <a href="https://heroku.com/deploy?template=https://github.com/Yyg-Masamba/Her0kuu_ucotaier">
+      - <a href="https://heroku.com/deploy?template=https://github.com/Yyg-Masamba/CMT-Loader">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
