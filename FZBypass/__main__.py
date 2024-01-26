@@ -24,7 +24,7 @@ async def restart():
             LOGGER.error(e)
 
 Bypass.start()
-LOGGER.info('CMT Bot Started!')
+LOGGER.info('FZ Bot Started!')
 Bypass.loop.run_until_complete(restart())
 idle()
 Bypass.stop()
