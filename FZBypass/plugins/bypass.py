@@ -114,7 +114,7 @@ async def inline_query(client, query):
             end = time()
             
             if not is_excep_link(link):
-                bp_link = f"🖥 <b>Link Sumber:</b> {link}\n┃\n┖ <b>Bypass Link:</b> {bp_link}"
+                bp_link = f"🖥 <b>Link Sumber:</b> {link}\n┃\n⚙️ <b>Bypass Link:</b> {bp_link}"
             answers.append(InlineQueryResultArticle(
                 title="✅️ Bypass Link Berhasil !",
                 input_message_content=InputTextMessageContent(
@@ -133,7 +133,7 @@ async def inline_query(client, query):
             answers.append(InlineQueryResultArticle(
                 title="❌️ Bypass Link Error !",
                 input_message_content=InputTextMessageContent(
-                    f'🖥 <b>Link Sumber:</b> {link}\n┃\n┖ {bp_link}\n\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n\n🧭 <b>Took Only <code>{convert_time(end - start)}</code></b>',
+                    f'🖥 <b>Link Sumber:</b> {link}\n┃\n⏱ {bp_link}\n\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n\n🧭 <b>Took Only <code>{convert_time(end - start)}</code></b>',
                     disable_web_page_preview=True,
                 ),
                 description=f"Bypass via !bp {link}",
