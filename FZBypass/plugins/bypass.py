@@ -82,7 +82,7 @@ async def bypass_check(client, message):
 
     if len(parse_data) != 0:
         parse_data[-1] = parse_data[-1] + f"┎ <b>Total Links : {no}</b>\n┠ <b>Waktu <code>{convert_time(end - start)}</code></b> !\n┖ <b>Tugas_Oleh </b>{message.from_user.mention} ( #ID{message.from_user.id} )"
-    tg_txt = "═══❰ 𝙿𝚎𝚊 𝙼𝚊𝚜𝚊𝚖𝚋𝚊 ❱══\n\n"
+    tg_txt = "▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n"
     for tg_data in parse_data:
         tg_txt += tg_data
         if len(tg_txt) > 4000:
