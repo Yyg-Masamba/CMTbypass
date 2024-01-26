@@ -20,7 +20,7 @@ async def start_msg(client, message):
     
     <i><b>Bot Dimulai {convert_time(time() - BOT_START)} Lalu...</b></i>
 
-    <b>Gabung Jika Mau Gunakan Bot Ini :</b> Pea Masamba <i>''',
+    <b>Gabung di Group Jika Mau Gunakan Bot Ini</b>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton('💻Modif', url='https://www.comelmuewa84.eu.org'), InlineKeyboardButton('📲Channel', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🖥Deploy', url="https://github.com/Yyg-Masamba/CMTbypass")]
@@ -62,7 +62,7 @@ async def bypass_check(client, message):
     parse_data = []
     for result, link in zip(completed_tasks, tlinks):
         if isinstance(result, Exception):
-            bp_link = f"\n\n📵 <b>Bypass Error:</b> {result}"
+            bp_link = f"\n\n📵 <b><u>Bypass Error:</b></u> {result}"
         elif is_excep_link(link):
             bp_link = result
         elif isinstance(result, list):
