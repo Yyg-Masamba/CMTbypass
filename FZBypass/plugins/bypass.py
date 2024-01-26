@@ -62,7 +62,7 @@ async def bypass_check(client, message):
     parse_data = []
     for result, link in zip(completed_tasks, tlinks):
         if isinstance(result, Exception):
-            bp_link = f"\n📵 <b>Bypass Error:</b> {result}"
+            bp_link = f"\n\n📵 <b>Bypass Error:</b> {result}"
         elif is_excep_link(link):
             bp_link = result
         elif isinstance(result, list):
@@ -81,7 +81,7 @@ async def bypass_check(client, message):
     end = time()
 
     if len(parse_data) != 0:
-        parse_data[-1] = parse_data[-1] + f"┎ <b>Total Links : {no}</b>\n┠ <b>Waktu <code>{convert_time(end - start)}</code></b> !\n┖ <b>Tugas_Oleh </b>{message.from_user.mention} ( #ID{message.from_user.id} )"
+        parse_data[-1] = parse_data[-1] + f"📚 <b>Total Links : {no}</b>\n🕰 <b>Waktu <code>{convert_time(end - start)}</code></b> !\n🦹‍♀️ <b>Tugas_Oleh </b>{message.from_user.mention} ( #ID{message.from_user.id} )"
     tg_txt = "𝐏𝐄𝐀 𝐌𝐀𝐒𝐀𝐌𝐁𝐀\n\n"
     for tg_data in parse_data:
         tg_txt += tg_data
