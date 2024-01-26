@@ -76,7 +76,7 @@ async def bypass_check(client, message):
         if is_excep_link(link):
             parse_data.append(f"{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n")
         else:
-            parse_data.append(f'🖥 <b><u>Link Sumber:</b></u> {link}{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n')
+            parse_data.append(f'🖥 <b><u>Link Sumber:</b></u> {link}\n{bp_link}\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n')
             
     end = time()
 
