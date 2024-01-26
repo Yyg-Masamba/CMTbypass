@@ -54,7 +54,7 @@ async def filepress(url: str):
     if tg_link == 'Unavailable':
         tg_link_text = 'Unavailable'
     else:
-        tg_link_text = f'<a href="{tg_link}">Click Here</a>'
+        tg_link_text = f'<a href="{tg_link}"><b>Click Here</a></b>'
 
     parse_txt = f'''📙<b><u>FilePress:</b></u> <a href="{url}"><b>Click Here</a></b>
 📓<b><u>Telegram:</b></u> {tg_link_text}'''
