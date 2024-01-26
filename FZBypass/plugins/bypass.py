@@ -147,7 +147,7 @@ async def inline_query(client, query):
                 input_message_content=InputTextMessageContent(
                     '''<b><i>CMT Bypass Bot!</i></b>
     
-    <i>A Powerful Elegant Multi Threaded Bot written in Python... which can Bypass Various Shortener Links, Scrape links, and More ... </i>
+    <i>Bot Multi yang Kuat dan Elegan dibuat dalam code Python, bisa membypass berbagai Link Shortener, Link Scrape, dan lainnya...</i>
     
 🎛 <b>Inline Use :</b> !bp [Single Link]''',
                 ),
