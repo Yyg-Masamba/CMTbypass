@@ -23,7 +23,7 @@ async def start_msg(client, message):
 🛃 <b>Use Me Here :</b> https://t.me/+LUX4Ppe0-YI4NTk1 <i>(Bypass Topic)</i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('🎓 Dev', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('♻️ Group', url="https://t.me/+LUX4Ppe0-YI4NTk1"), InlineKeyboardButton('🔍 Deploy Own', url="https://github.com/Yyg-Masamba/CMTbypass")]
+            [InlineKeyboardButton('🎓 Dev', url='https://t.me/+LUX4Ppe0-YI4NTk1'), InlineKeyboardButton('🔍 Deploy Own', url="https://github.com/Yyg-Masamba/CMTbypass")]
             ])
     )
 
