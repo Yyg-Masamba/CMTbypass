@@ -38,4 +38,4 @@ class Config:
     UPTOBOX_TOKEN   = getenv('UPTOBOX_TOKEN', '')
     TERA_COOKIE     = getenv('TERA_COOKIE', '')
 
-Bypass = Client("FZ", api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN, plugins=dict(root="FZBypass/plugins"), parse_mode=ParseMode.HTML)
+Bypass = Client("CMT", api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN, plugins=dict(root="CMTBypass/plugins"), parse_mode=ParseMode.HTML)
