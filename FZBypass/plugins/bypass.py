@@ -155,7 +155,7 @@ async def inline_query(client, query):
                 description="Bypass via !bp [link]",
                 reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("CMT Channel", url="https://t.me/+LUX4Ppe0-YI4NTk1"),
-                        InlineKeyboardButton('Try Bypass', switch_inline_query_current_chat="!bp ")]
+                        InlineKeyboardButton('Coba Bypass', switch_inline_query_current_chat="!bp ")]
                 ])
             ))
     try:
