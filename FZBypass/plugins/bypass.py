@@ -68,7 +68,7 @@ async def bypass_check(client, message):
         elif isinstance(result, list):
             bp_link, ui = "", "♻️"
             for ind, lplink in reversed(list(enumerate(result, start=1))):
-                bp_link = f"\n{ui} <b><u>{ind}x Hasil Bypass:</b></u> {lplink}" + bp_link
+                bp_link = f"\n\n{ui} <b><u>{ind}x Hasil Bypass:</b></u> \n{lplink}" + bp_link
                 ui = "┠"
         else:
             bp_link = f"\n🖥 <b><u>Bypass Link:</b></u> {result}"
