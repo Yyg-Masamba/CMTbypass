@@ -158,7 +158,7 @@ async def toonworld4all(url: str):
     
 async def tamilmv(url):
     cget = create_scraper().request
-    resp = cget("GET", url, allow_redirects=False)
+    resp = cget("GET", url)
     soup = BeautifulSoup(resp.text, 'html.parser')
     mag = soup.select('a[href^="magnet:?xt=urn:btih:"]')
     tor = soup.select('a[data-fileext="torrent"]')
